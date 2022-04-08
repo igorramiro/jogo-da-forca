@@ -29,7 +29,6 @@ def partida():#inicia a partida
             if jogador_letra.lower()==palavra[i] or jogador_letra.upper()==palavra[i]:
                 aux = list(palavra_oculta)#transforma em lista
                 aux[i] = palavra[i]
-                print(aux)
                 palavra_oculta = "".join(aux)#une a lista
                 acerto=1
             elif acerto==0 and i==(len(palavra)-1):
